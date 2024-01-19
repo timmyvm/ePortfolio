@@ -148,6 +148,11 @@ body {
   border: none;
   font-weight: 500;
   border-radius: 99px;
+  transition: 200ms ;
+}
+
+.nav__link__button:hover{
+  box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav__menu {
@@ -270,7 +275,7 @@ body {
 
 .header__title {
   font-size: 96px;
-  font-weight: 600;
+  font-weight: 900;
   line-height: 100px;
   color: var(--primary);
   animation: slideUp 500ms, 200ms backwards;
@@ -278,7 +283,7 @@ body {
 
 .header__subtitle {
   font-size: 44px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 44px;
   animation: slideUp 500ms, 250ms backwards;
 }
@@ -301,12 +306,37 @@ body {
     header__scroll__animate 1000ms infinite alternate-reverse;
 }
 
+.vertical-oval-button {
+  width: 1.5rem;  
+  height: 2.5rem; 
+  border: 3px solid black;
+  border-radius: 9999px;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  bottom: 62px;
+  animation: fadeIn 500ms, 500ms backwards;
+  z-index: 10;
+}
+
+.wheel{
+  position: absolute;
+  width: 0.3rem;
+  height: 0.6rem;
+  background-color: black;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, 0);
+  border-radius: .6rem;
+  animation: header__scroll__animate 1000ms infinite alternate-reverse;
+}
+
 @keyframes header__scroll__animate {
   0% {
-    bottom: 64px;
+    transform: translate(-50%, 0);
   }
   100% {
-    bottom: 22px;
+    transform: translate(-50%, 80%);
   }
 }
 

@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timothy Mota</title>
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script
       src="https://kit.fontawesome.com/88a0810fa9.js"
       crossorigin="anonymous"
@@ -20,6 +22,10 @@
 </script>
   </head>
   <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- Succsess box -->
     <div class="success">
@@ -107,12 +113,17 @@
             <a href="#Resume" class="header__link" target="_blank"
               ><i class="fa-solid fa-file-pdf"></i
             ></a>
-          </div>
-          <a href="#about" class="header__scroll">
+          </div> 
+          <button class="vertical-oval-button">
+            <a href="#about">‎ ‎ ‎ 
+              ‎ ‎ ‎ ‎ </a>
+            <span class="wheel">‎ ‎ </span>
+          </button>
+          <!-- <a href="#about" class="header__scroll hidden">
             <i class="fa-solid fa-angle-down"></i>
             <i class="fa-solid fa-angle-down"></i>
             <i class="fa-solid fa-angle-down"></i>
-          </a>
+          </a> -->
         </div>
       </div>
     </header>
@@ -123,7 +134,7 @@
         <div class="container">
           <div class="row about__row">
             <div class="about__content">
-              <div class="about__text">
+              <div class="about__text" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <h3 class="about__title">About me</h3>
                 <h4 class="about__text__subtitle">Timothy Mota</h4>
                 <p class="about__text__para">
@@ -135,7 +146,7 @@
                   React.
                 </p>
               </div>
-              <div class="about__skills">
+              <div class="about__skills" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                 <h3 class="about__title">My skills</h3>
                 <div class="about__skill__wrapper">
                   <figure class="about__skill">
@@ -181,7 +192,7 @@
                 </div>
               </div>
             </div>
-            <figure class="about__image__wrapper">
+            <figure class="about__image__wrapper" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-easing="ease-in">
               <img src="assets/about-image.webp" alt="" class="about__image" />
             </figure>
           </div>
@@ -224,7 +235,7 @@
         <div class="container">
           <div class="row projects__row">
             <h2 class="projects__title">Projects</h2>
-            <div class="project">
+            <div class="project" data-aos="fade-right" data-aos-duration="1000">
               <figure class="project__image__wrapper">
                 <img
                   class="project__image"
@@ -273,7 +284,7 @@
                 </div>
               </div>
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-left" data-aos-duration="1000">
               <figure class="project__image__wrapper">
                 <img
                   class="project__image"
@@ -322,7 +333,7 @@
                 </div>
               </div>
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-right" data-aos-duration="1000">
               <figure class="project__image__wrapper">
                 <img
                   class="project__image"
