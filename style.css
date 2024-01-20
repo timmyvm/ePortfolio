@@ -295,17 +295,6 @@ body {
   animation: slideUp 500ms 300ms backwards;
 }
 
-.header__scroll {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: fadeIn 500ms, 500ms backwards,
-    header__scroll__animate 1000ms infinite alternate-reverse;
-}
-
 .vertical-oval-button {
   width: 1.5rem;  
   height: 2.5rem; 
@@ -314,9 +303,12 @@ body {
   background-color: transparent;
   position: absolute;
   left: 50%;
-  bottom: 62px;
+  bottom: 52px;
   animation: fadeIn 500ms, 500ms backwards;
-  z-index: 10;
+}
+
+.vertical-oval-button:hover{
+  scale: 1.05;
 }
 
 .wheel{
@@ -597,6 +589,11 @@ body {
   gap: 8px;
   margin-top: 12px;
   width: fit-content;
+  transition: 300ms;
+}
+
+.contact__link:hover{
+  color: orange;
 }
 
 .contact__form {
