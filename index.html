@@ -6,20 +6,21 @@
     <title>Timothy Mota</title>
     <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script
       src="https://kit.fontawesome.com/88a0810fa9.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("wqw-eOdfiWViLzshq");
-   })();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("wqw-eOdfiWViLzshq");
+      })();
+    </script>
   </head>
   <body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -29,16 +30,14 @@
 
     <!-- Succsess box -->
     <div class="success">
-      <i class="fa-regular fa-circle-check success__icon" ></i>
+      <i class="fa-regular fa-circle-check success__icon"></i>
       <div class="success__text">
         <span class="success__text__title">Message Sent</span>
-        <p class="success__text__para"> 
-          Your message has been recieved. 🎉 
-          I'll get back to you soon!
+        <p class="success__text__para">
+          Your message has been recieved. 🎉 I'll get back to you soon!
         </p>
       </div>
     </div>
-
 
     <!-- Nav -->
     <nav class="nav">
@@ -51,22 +50,35 @@
           <a href="#contact" class="nav__link">
             <button class="nav__link__button">Contact</button>
           </a>
+          <button class="nav__switch__button">
+            <i class="fa-solid fa-circle-half-stroke nav__switch"></i>
+          </button>
         </div>
-        <button class="nav__menu" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+
+        <button class="nav__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </nav>
 
     <!-- Menu -->
     <div class="menu__wrapper">
       <nav class="menu">
-        <button class="menu__close" onclick="closeMenu()"><i class="fa-solid fa-x"></i></button>
+        <button class="menu__close" onclick="closeMenu()">
+          <i class="fa-solid fa-x"></i>
+        </button>
         <div class="menu__links">
           <a href="#home" class="menu__link" onclick="closeMenu()">Home</a>
           <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
-          <a href="#projects" class="menu__link" onclick="closeMenu()">Projects</a>
+          <a href="#projects" class="menu__link" onclick="closeMenu()"
+            >Projects</a
+          >
           <a href="#contact" class="menu__link">
             <button class="menu__button" onclick="closeMenu()">Contact</button>
           </a>
+          <button class="switch__themes__menu" onclick="closeMenu()">
+            <i class="fa-solid fa-circle-half-stroke nav__switch__menu"></i> Switch Themes
+          </button>
         </div>
       </nav>
     </div>
@@ -113,15 +125,10 @@
             <a href="#Resume" class="header__link" target="_blank"
               ><i class="fa-solid fa-file-pdf"></i
             ></a>
-          </div> 
+          </div>
           <a class="vertical-oval-button" href="#about">
             <span class="wheel"></span>
           </a>
-          <!-- <a href="#about" class="header__scroll hidden">
-            <i class="fa-solid fa-angle-down"></i>
-            <i class="fa-solid fa-angle-down"></i>
-            <i class="fa-solid fa-angle-down"></i>
-          </a> -->
         </div>
       </div>
     </header>
@@ -132,7 +139,12 @@
         <div class="container">
           <div class="row about__row">
             <div class="about__content">
-              <div class="about__text" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+              <div
+                class="about__text"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
                 <h3 class="about__title">About me</h3>
                 <h4 class="about__text__subtitle">Timothy Mota</h4>
                 <p class="about__text__para">
@@ -144,7 +156,12 @@
                   React.
                 </p>
               </div>
-              <div class="about__skills" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+              <div
+                class="about__skills"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
                 <h3 class="about__title">My skills</h3>
                 <div class="about__skill__wrapper">
                   <figure class="about__skill">
@@ -190,7 +207,12 @@
                 </div>
               </div>
             </div>
-            <figure class="about__image__wrapper" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-easing="ease-in">
+            <figure
+              class="about__image__wrapper"
+              data-aos="fade-zoom-in"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in"
+            >
               <img src="assets/about-image.webp" alt="" class="about__image" />
             </figure>
           </div>
@@ -200,36 +222,38 @@
       <!-- Project -->
       <section id="projects">
         <svg
-        id="visual"
-        viewBox="0 0 1200 1300"
-        width="880"
-        height="1200"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        class="blob blob-project"
-      >
-        <g transform="translate(927.4519875387796 -111.9512848530959)">
-          <path
-            d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
-            fill="#000000"
-          ></path>
-        </g>
-      </svg><svg
-      id="visual"
-      viewBox="0 0 1200 1300"
-      width="880"
-      height="1200"
-      xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-      class="blob blob-project2"
-    >
-      <g transform="translate(927.4519875387796 -111.9512848530959)">
-        <path
-          d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
-          fill="#000000"
-        ></path>
-      </g>
-    </svg>
+          id="visual"
+          viewBox="0 0 1200 1300"
+          width="880"
+          height="1200"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          class="blob blob-project"
+        >
+          <g transform="translate(927.4519875387796 -111.9512848530959)">
+            <path
+              d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
+              fill="#000000"
+            ></path>
+          </g>
+        </svg>
+        <svg
+          id="visual"
+          viewBox="0 0 1200 1300"
+          width="880"
+          height="1200"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          class="blob blob-project2"
+        >
+          <g transform="translate(927.4519875387796 -111.9512848530959)">
+            <path
+              d="M648.8 -752.4C919.6 -545.9 1272.3 -416.2 1356.5 -200.5C1440.7 15.3 1256.4 317.2 1074.3 608.8C892.3 900.4 712.4 1181.7 443.3 1327C174.2 1472.2 -184.1 1481.3 -364.5 1290.3C-544.9 1099.4 -547.4 708.5 -624.9 430.5C-702.4 152.5 -854.9 -12.6 -829.6 -144.5C-804.2 -276.4 -601 -375.2 -433.1 -599.8C-265.2 -824.3 -132.6 -1174.7 28.2 -1208.3C189 -1241.9 378 -958.8 648.8 -752.4"
+              fill="#000000"
+            ></path>
+          </g>
+        </svg>
+
         <div class="container">
           <div class="row projects__row">
             <h2 class="projects__title">Projects</h2>
@@ -272,11 +296,11 @@
                 </p>
                 <div class="project__links">
                   <a href="" class="project__link">
-                    <span> Live Link </span>
+                    <span class="project__link__text"> Live Link </span>
                     <i class="fa-solid fa-up-right-from-square"></i>
                   </a>
                   <a href="" class="project__link">
-                    <span> Code </span>
+                    <span class="project__link__text"> Code </span>
                     <i class="fa-brands fa-github"></i>
                   </a>
                 </div>
@@ -321,11 +345,11 @@
                 </p>
                 <div class="project__links">
                   <a href="" class="project__link">
-                    <span> Live Link </span>
+                    <span class="project__link__text"> Live Link </span>
                     <i class="fa-solid fa-up-right-from-square"></i>
                   </a>
                   <a href="" class="project__link">
-                    <span> Code </span>
+                    <span class="project__link__text"> Code </span>
                     <i class="fa-brands fa-github"></i>
                   </a>
                 </div>
@@ -370,11 +394,11 @@
                 </p>
                 <div class="project__links">
                   <a href="" class="project__link">
-                    <span> Live Link </span>
+                    <span class="project__link__text"> Live Link </span>
                     <i class="fa-solid fa-up-right-from-square"></i>
                   </a>
                   <a href="" class="project__link">
-                    <span> Code </span>
+                    <span class="project__link__text"> Code </span>
                     <i class="fa-brands fa-github"></i>
                   </a>
                 </div>
@@ -416,13 +440,20 @@
               </div>
               <div class="form__item">
                 <label for="" class="form__item__label">Message</label>
-                <textarea name="message" class="form__item__textarea" required></textarea>
+                <textarea
+                  name="message"
+                  class="form__item__textarea"
+                  required
+                ></textarea>
               </div>
-              <button class="contact__form__submit">Send 
+              <button class="contact__form__submit">
+                Send
                 <div class="contact__form__loading hidden">
-                  <i class="fa-solid fa-spinner contact__form__loading__icon"></i>
+                  <i
+                    class="fa-solid fa-spinner contact__form__loading__icon"
+                  ></i>
                 </div>
-            </button>
+              </button>
             </form>
           </div>
         </div>

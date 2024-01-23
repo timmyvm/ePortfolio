@@ -46,3 +46,12 @@ async function sendEmail(event) {
     );
   }
 }
+
+document.querySelector(".nav__switch__button").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+
+document.querySelector(".switch__themes__menu").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+
