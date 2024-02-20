@@ -584,6 +584,10 @@ body.dark {
   user-select: none;
 }
 
+.Csharp{
+  width: 90%;
+}
+
 /* .about__image__wrapper::before {
   content: "";
   position: absolute;
