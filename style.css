@@ -231,6 +231,18 @@ body.dark {
   border: #575757;
 }
 
+.dark .about__image{
+  border-color: #0095ff;
+}
+
+.dark .contact__link__text:hover{
+  color: #0095ff;
+}
+
+.dark .footer__link:hover{
+  color: #0095ff;
+}
+
 /* Nav Section */
 
 .nav {
@@ -666,11 +678,19 @@ body.dark {
   overflow: hidden;
   border-radius: 8px;
   position: relative;
+  user-select: none;
 }
 
 .project__image {
   width: 100%;
+  height: 100%;
   transition: 400ms ease;
+  user-select: none;
+}
+
+.car__project__wrapper{
+  width: 120%;
+  object-fit: cover;
 }
 
 .project__description {
@@ -784,11 +804,14 @@ body.dark {
   gap: 8px;
   margin-top: 12px;
   width: fit-content;
-  transition: 300ms;
 }
 
 .contact__link:hover {
   color: orange;
+}
+
+.contact__link__text{
+  transition: 200ms ease-in;
 }
 
 .contact__form {
@@ -943,6 +966,11 @@ footer {
 .footer__link {
   color: white;
   padding: 0 10px;
+  transition: 270ms;
+}
+
+.footer__link:hover{
+  color: orange;
 }
 
 /* Media */
