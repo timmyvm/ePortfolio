@@ -1,3 +1,5 @@
+// Open-Close Menu Functions
+
 function openMenu() {
   const body = document.body;
 
@@ -10,9 +12,7 @@ function closeMenu() {
   body.classList.remove("open");
 }
 
-// template_gep9qzf
-// service_ywlarfc
-// wqw-eOdfiWViLzshq
+// Contact Email Send
 
 async function sendEmail(event) {
   event.preventDefault();
@@ -40,18 +40,42 @@ async function sendEmail(event) {
 
     console.log("done");
   } catch {
-    loading.classList.add('hidden')
+    loading.classList.add("hidden");
     alert(
       "An error has occured! Please try again, or contact me at tim.mota21@gmail.com"
     );
   }
 }
 
+// Light Dark Mode
+
 document.querySelector(".nav__switch__button").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
 
-document.querySelector(".switch__themes__menu").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
+document
+  .querySelector(".switch__themes__menu")
+  .addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
 
+// Cursor
+
+const cursorDot = document.querySelector(".cursor__dot");
+const cursorOutline = document.querySelector(".cursor__outline");
+
+window.addEventListener("mousemove", function (e) {
+  const posX = e.clientX;
+  const posY = e.clientY;
+
+  cursorDot.style.left = `${posX}px`;
+  cursorDot.style.top = `${posY}px`;
+
+  // cursorOutline.style.left = `${posX}px`;
+  // cursorOutline.style.top = `${posY}px`;
+
+  cursorOutline.animate({
+    left: `${posX}px`,
+    top: `${posY}px`
+  }, {duration:500, fill: "forwards"})
+});
