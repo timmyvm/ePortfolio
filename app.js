@@ -77,5 +77,5 @@ window.addEventListener("mousemove", function (e) {
   cursorOutline.animate({
     left: `${posX}px`,
     top: `${posY}px`
-  }, {duration:500, fill: "forwards"})
+  }, {duration:300, fill: "forwards"})
 });
