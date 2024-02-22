@@ -693,6 +693,11 @@ body.dark {
   object-fit: cover;
 }
 
+.comingsoon{
+  height: 90%;
+  width: 120%;
+}
+
 .project__description {
   max-width: 320px;
   display: flex;
