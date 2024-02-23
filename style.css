@@ -120,6 +120,10 @@ body {
   pointer-events: none;
 }
 
+.project:hover .cursor__outline{
+  scale: 2;
+}
+
 /* ALL DARK THEMES */
 
 body.dark {
@@ -280,6 +284,10 @@ body.dark {
 .dark .header__about__span:hover{
   border-bottom: 2px solid #0095ff;
   color: #0095ff;
+}
+
+.dark .cursor__outline{
+  box-shadow: 0 0 50px white ;
 }
 
 /* Nav Section */
@@ -1092,6 +1100,10 @@ footer {
   .project__skill,
   .project__para {
     font-size: 12px;
+  }
+  
+  .cursor__outline{
+    display: none;
   }
 }
 
